@@ -1,9 +1,10 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 
-interface Asset {
+export interface Asset {
   id: number;
   name: string;
   category: string;
+  stock: number
 }
 
 const initialState: { allocatedItems: Asset[] } = {
