@@ -9,7 +9,7 @@ export default function Assets() {
   const dispatch = useDispatch(); // Redux dispatcher
 
   useEffect(() => {
-    // Fetching from your Drizzle backend
+    // Fetching from Drizzle backend
     axios.get('http://localhost:3001/v1/api/assets').then((res) => {
       setHardware(res.data);
       setLoading(false);
