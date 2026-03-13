@@ -10,7 +10,7 @@ export default function Assets() {
 
   useEffect(() => {
     // Fetching from Drizzle backend
-    axios.get('http://localhost:3001/v1/api/assets').then((res) => {
+    axios.get('https://demo.lahirudesilva.dev/v1/api/assets').then((res) => {
       setHardware(res.data);
       setLoading(false);
     });
