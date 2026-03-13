@@ -5,10 +5,10 @@
   "main": "./dist/index.js",
   "private": true,
   "scripts": {
-    "start": "npm run build && ./dist/index.js",
+    "start": "npm run build && node ./dist/server.js",
     "dev": "nodemon --config nodemon.json",
     "db:update": "npx drizzle-kit generate && npx drizzle-kit migrate",
-    "build:ts": "tsc --build",
+    "build": "node bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
